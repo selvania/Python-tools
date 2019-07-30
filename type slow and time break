@@ -1,0 +1,19 @@
+import time
+import random
+import sys
+
+def time_break(num):
+    random_time = (num)*random.randint(1, 5)
+    return time.sleep(random_time)
+
+def type_slow(str):
+    string1 = list(str) 
+    for x in string1:
+        sys.stdout.write(x)
+        time.sleep(0.1*random.randint(1,2))
+    print(" ")
+    return 
+
+type_slow("Thank you for viewing my program. If you could just wait a moment....")
+time_break(1.5)
+type_slow("All set! Feel free to use me in your code!")
